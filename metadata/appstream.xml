@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components version="1.0" origin="somaos">
   <component type="desktop-application">
-    <id>org.somaos.UnrealEngineManager</id>
-    <pkgname>soma-unreal-manager</pkgname>
-    <name>Unreal Engine Manager</name>
-    <summary>Install Epic's native Linux Unreal Engine builds</summary>
+    <id>org.somaos.UnrealGPU-P</id>
+    <pkgname>soma-unreal-gpup</pkgname>
+    <name>Soma Unreal GPU-P</name>
+    <summary>GPU-P launch integration for Asset Manager Studio engines</summary>
     <metadata_license>MIT</metadata_license>
     <project_license>MIT</project_license>
     <developer id="org.somaos">
@@ -12,43 +12,39 @@
     </developer>
     <description>
       <p>
-        Installs and launches native Linux Unreal Engine builds downloaded
-        directly by the user from Epic Games.
+        Adds Mesa DZN GPU-P launchers for native Linux Unreal Engine versions
+        installed and managed with Asset Manager Studio.
       </p>
       <p>
-        Keep multiple engine versions side-by-side and launch them through
-        Soma's GPU-P Vulkan compatibility layer. Epic authentication and
-        license acceptance take place on Epic's website.
+        Detect engines, create per-version desktop launchers, add custom engine
+        directories, and verify the Hyper-V GPU-P Vulkan bridge.
       </p>
       <p>
-        Fab is included in current Unreal Engine releases. Quixel Bridge is a
-        legacy workflow and is not installed separately.
+        Asset Manager Studio remains responsible for Epic authentication,
+        engine downloads, projects, Fab, Quixel, assets, and plugins.
       </p>
     </description>
-    <launchable type="desktop-id">org.somaos.UnrealEngineManager.desktop</launchable>
-    <icon type="stock">org.somaos.UnrealEngineManager</icon>
+    <launchable type="desktop-id">org.somaos.UnrealGPU-P.desktop</launchable>
+    <icon type="stock">org.somaos.UnrealGPU-P</icon>
     <provides>
-      <binary>soma-unreal-manager</binary>
-      <binary>soma-unreal-launch</binary>
+      <binary>soma-unreal-gpup</binary>
     </provides>
     <categories>
       <category>Development</category>
       <category>IDE</category>
-      <category>Graphics</category>
     </categories>
     <keywords>
       <keyword>Unreal Engine</keyword>
-      <keyword>Epic Games</keyword>
-      <keyword>Fab</keyword>
-      <keyword>game development</keyword>
+      <keyword>Asset Manager Studio</keyword>
+      <keyword>GPU-P</keyword>
+      <keyword>Vulkan</keyword>
     </keywords>
-    <url type="homepage">https://github.com/frossdelaqrois/SomaOS-Packages</url>
-    <url type="help">https://dev.epicgames.com/documentation/unreal-engine/linux-development-quickstart-for-unreal-engine</url>
+    <url type="homepage">https://github.com/frossdelaqrois/SomaOS</url>
     <content_rating type="oars-1.1"/>
     <releases>
-      <release version="0.1.0" date="2026-07-23">
+      <release version="1.0.0" date="2026-07-23">
         <description>
-          <p>Initial Discover catalog integration and multi-version Linux engine manager.</p>
+          <p>Replaces the engine selector with focused Asset Manager Studio GPU-P integration.</p>
         </description>
       </release>
     </releases>
