@@ -1,0 +1,9 @@
+[somaos]
+name=SomaOS Packages
+baseurl=https://frossdelaqrois.github.io/SomaOS-Packages/fedora/$releasever/noarch/
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://frossdelaqrois.github.io/SomaOS-Packages/RPM-GPG-KEY-SomaOS
+metadata_expire=1h
+skip_if_unavailable=0
